@@ -102,7 +102,7 @@ const colors = [
 ];
 /* GET home page. */
 router.get("/", (req, res, next) => {
-  res.render("index", { title: "Home", pies, colors });
+  res.render("index", { title: "Owlbert's Pies", pies, colors });
 });
 
 router.get("/api/menu", (req, res, next) => {
