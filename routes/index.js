@@ -111,6 +111,13 @@ router.get("/api/menu", (req, res, next) => {
   });
 });
 
+router.get("/api/pizza", (req, res, next) => {
+  res.status(503).json({
+    error: "internal_error",
+    message: "We don't sell pizza pies!",
+  });
+});
+
 router.post("/api/order", (req, res, next) => {
   res.status(201).json({
     pies: piesRaw,
