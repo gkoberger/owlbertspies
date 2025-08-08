@@ -112,7 +112,7 @@ router.get("/api/menu", (req, res, next) => {
 });
 
 router.get("/api/pizza", (req, res, next) => {
-  res.status(503).json({
+  res.status(500).json({
     error: "internal_error",
     message: "We don't sell pizza pies!",
   });
